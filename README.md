@@ -1,4 +1,3 @@
-Here's the full README.md:
 markdown# 🤖 K8s Troubleshooting Agent
 
 An AI-powered Kubernetes troubleshooting agent that investigates pod issues and provides diagnosis and fixes — automatically.
