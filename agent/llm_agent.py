@@ -67,6 +67,9 @@ Always end with:
 
         # Check for tool calls
         has_tool_call = False
+        if not response.candidates or not response.candidates[0].content:
+            print("No response from Gemini, retrying...")
+            continue
         for part in response.candidates[0].content.parts:
             if part.function_call:
                 has_tool_call = True
